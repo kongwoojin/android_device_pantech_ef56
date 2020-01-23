@@ -39,7 +39,7 @@ static int wifi_check_qcom_cfg_files()
     else
     {
         unsigned char macbuf[6];
-        fseek(fp,0x36604,SEEK_SET);
+        fseek(fp,0x36603,SEEK_SET);
         n = fread(macbuf, 6, 1, fp);
         sprintf(macAddress,"%02X%02X%02X%02X%02X%02X",
                 macbuf[0], macbuf[1], macbuf[2],
